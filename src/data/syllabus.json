@@ -1,0 +1,65 @@
+{
+  "Science": {
+    "stream": "Science",
+    "subjects": [
+      {
+        "name": "Physics",
+        "chapters": [
+          { "id": "physics-1", "title": "Motion and Forces" },
+          { "id": "physics-2", "title": "Energy and Work" },
+          { "id": "physics-3", "title": "Waves and Light" }
+        ]
+      },
+      {
+        "name": "Chemistry",
+        "chapters": [
+          { "id": "chem-1", "title": "Atomic Structure" },
+          { "id": "chem-2", "title": "Chemical Bonding" },
+          { "id": "chem-3", "title": "Reactions and Equations" }
+        ]
+      }
+    ]
+  },
+  "Commerce": {
+    "stream": "Commerce",
+    "subjects": [
+      {
+        "name": "Accounting",
+        "chapters": [
+          { "id": "acc-1", "title": "Introduction to Accounting" },
+          { "id": "acc-2", "title": "Financial Statements" },
+          { "id": "acc-3", "title": "Journal and Ledger" }
+        ]
+      },
+      {
+        "name": "Business Studies",
+        "chapters": [
+          { "id": "bs-1", "title": "Principles of Management" },
+          { "id": "bs-2", "title": "Marketing Basics" },
+          { "id": "bs-3", "title": "Business Environment" }
+        ]
+      }
+    ]
+  },
+  "Arts": {
+    "stream": "Arts",
+    "subjects": [
+      {
+        "name": "History",
+        "chapters": [
+          { "id": "hist-1", "title": "Ancient Civilizations" },
+          { "id": "hist-2", "title": "Medieval Period" },
+          { "id": "hist-3", "title": "Modern History" }
+        ]
+      },
+      {
+        "name": "Geography",
+        "chapters": [
+          { "id": "geo-1", "title": "Earth and Maps" },
+          { "id": "geo-2", "title": "Climate and Weather" },
+          { "id": "geo-3", "title": "Human Geography" }
+        ]
+      }
+    ]
+  }
+}

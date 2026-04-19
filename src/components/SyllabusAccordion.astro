@@ -1,0 +1,39 @@
+---
+import ChapterList from "./ChapterList";
+
+interface Chapter {
+  id: string;
+  title: string;
+}
+
+interface Subject {
+  name: string;
+  chapters: Chapter[];
+}
+
+interface Props {
+  subjects: Subject[];
+}
+
+const { subjects } = Astro.props;
+---
+
+<div class="space-y-4">
+  {
+    subjects.map((subject) => (
+      <div class="collapse collapse-plus border border-base-300 bg-base-100">
+        <input type="radio" name="accordion" />
+        <div class="collapse-title text-lg font-semibold">
+          {subject.name}
+        </div>
+        <div class="collapse-content">
+          <ChapterList
+            client:load
+            subjectName={subject.name}
+            chapters={subject.chapters}
+          />
+        </div>
+      </div>
+    ))
+  }
+</div>
