@@ -1,39 +1,74 @@
 ---
+import SignupForm from "../components/SignupForm";
+import UserGreeting from "../components/UserGreeting";
 import SyllabusAccordion from "../components/SyllabusAccordion.astro";
 import syllabusData from "../data/syllabus.json";
 import Layout from "../layouts/Layout.astro";
-
-const { stream = "Commerce" } = Astro.params;
-const currentStream = syllabusData[stream as keyof typeof syllabusData];
 ---
 
 <Layout>
-  <h1 class="p-5 text-xl">Welcome to SSCPrep!</h1>
-  <h2 class="pl-5">
-    Your one-stop destination for comprehensive SSC exam preparation.
-  </h2>
+  <!-- Signup form (hides when logged in) -->
+  <SignupForm client:load />
 
-  <section class="p-6">
-    <h2 class="mb-4 text-2xl font-bold">{currentStream.stream} Stream</h2>
-    <SyllabusAccordion subjects={currentStream.subjects} />
-  </section>
+  <!-- Greeting (hides when not logged in) -->
+  <UserGreeting client:load />
 
-  <p class="p-5">Please choose your stream:</p>
-  <div class="flex flex-col gap-4 p-5">
-    <a
-      href="/science"
-      class="rounded bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
-      >Science</a
-    >
-    <a
-      href="/commerce"
-      class="rounded bg-green-500 px-4 py-2 text-white transition hover:bg-green-600"
-      >Commerce (Business Studies)</a
-    >
-    <a
-      href="/arts"
-      class="rounded bg-purple-500 px-4 py-2 text-white transition hover:bg-purple-600"
-      >Arts (Humanities)</a
-    >
-  </div>
+  <!-- Accordions for each stream (shown when logged in to matching stream) -->
+  {
+    ["Science", "Commerce", "Arts"].map((stream) => (
+      <div id={`accordion-${stream}`} class="hidden">
+        <div class="mx-auto max-w-4xl p-4">
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title mb-6">Your {stream} Syllabus</h2>
+              <SyllabusAccordion
+                client:load
+                subjects={
+                  syllabusData[stream as keyof typeof syllabusData]?.subjects ||
+                  []
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+
+  <script>
+    function updateDashboard() {
+      // Hide all accordions
+      document.getElementById("accordion-Science")?.classList.add("hidden");
+      document.getElementById("accordion-Commerce")?.classList.add("hidden");
+      document.getElementById("accordion-Arts")?.classList.add("hidden");
+
+      try {
+        const userStr = localStorage.getItem("sscprep_user");
+        if (userStr) {
+          const user = JSON.parse(userStr);
+          const accordion = document.getElementById(`accordion-${user.stream}`);
+          if (accordion) {
+            accordion.classList.remove("hidden");
+          }
+        }
+      } catch (e) {
+        // Error parsing localStorage
+      }
+    }
+
+    // Initial check
+    updateDashboard();
+
+    // Watch for storage changes
+    window.addEventListener("storage", updateDashboard);
+
+    // Also watch for changes from same tab
+    const originalSetItem = localStorage.setItem;
+    localStorage.setItem = function (key, value) {
+      originalSetItem.apply(this, arguments);
+      if (key === "sscprep_user") {
+        setTimeout(updateDashboard, 0);
+      }
+    };
+  </script>
 </Layout>
