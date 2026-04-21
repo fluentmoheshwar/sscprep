@@ -1,4 +1,106 @@
 {
+  "All": {
+    "stream": "All",
+    "subjects": [
+      {
+        "name": "বাংলা সাহিত্য",
+        "chapters": [
+          { "id": "bn-1", "title": "প্রতুপকার" },
+          { "id": "bn-2", "title": "ফুলের বিবাহ" },
+          { "id": "bn-3", "title": "সুভা" },
+          { "id": "bn-4", "title": "লাইব্রেরি" },
+          { "id": "bn-5", "title": "বই পড়া" },
+          { "id": "bn-6", "title": "অভাগীর স্বর্গ" },
+          { "id": "bn-7", "title": "নিরীহ বাঙালি" },
+          { "id": "bn-8", "title": "পল্লীসাহিত্য" },
+          { "id": "bn-9", "title": "উদ্যম ও পরিশ্রম" },
+          { "id": "bn-10", "title": "জীবনে শিল্পের স্থান" },
+          { "id": "bn-11", "title": "আম-আটির ভেপু" },
+          { "id": "bn-12", "title": "মানুষ মুহাম্মদ স." },
+          { "id": "bn-13", "title": "উপেক্ষিত শক্তির উদ্বোধন" },
+          { "id": "bn-14", "title": "নিমগাছ" },
+          { "id": "bn-15", "title": "শিক্ষা ও মনুষ্যত্ব" },
+          { "id": "bn-16", "title": "প্রবাস বন্ধু" },
+          { "id": "bn-17", "title": "মমতদি" },
+          { "id": "bn-18", "title": "বনমানুষ" },
+          { "id": "bn-19", "title": "একাত্তরের দিনগুলি" },
+          { "id": "bn-20", "title": "স্বাধীনতা আমার স্বাধীনতা" },
+          { "id": "bn-21", "title": "একুশের গল্প" },
+          { "id": "bn-22", "title": "আমাদের সংস্কৃতি" },
+          { "id": "bn-23", "title": "সাহিত্যের রূপ ও রীতি" },
+          { "id": "bn-24", "title": "বাঙলা শব্দ" },
+          { "id": "bn-25", "title": "আমাদের নতুন গৌরবগাথা" },
+          { "id": "bn-26", "title": "বন্দনা" },
+          { "id": "bn-27", "title": "হামদ" },
+          { "id": "bn-28", "title": "বঙ্গবানী" },
+          { "id": "bn-29", "title": "কপোতক্ষ নদ" },
+          { "id": "bn-30", "title": "জীবন-সঙ্গীত" },
+          { "id": "bn-31", "title": "প্রাণ" },
+          { "id": "bn-32", "title": "জুতা-আবিষ্কার" },
+          { "id": "bn-33", "title": "অন্ধবধূ" },
+          { "id": "bn-34", "title": "ঝর্ণার গান" },
+          { "id": "bn-35", "title": "ছায়াবাজি" },
+          { "id": "bn-36", "title": "জীবন বিনিময়" },
+          { "id": "bn-37", "title": "মানুষ" },
+          { "id": "bn-38", "title": "উমর ফারুক" },
+          { "id": "bn-39", "title": "সেইদিন এই মাঠ" },
+          { "id": "bn-40", "title": "যাব আমি তোমার দেশে" },
+          { "id": "bn-41", "title": "একটি কাফি" },
+          { "id": "bn-42", "title": "আমার দেশ" },
+          { "id": "bn-43", "title": "বৃষ্টি" },
+          { "id": "bn-44", "title": "মে-দিনের কবিতা" },
+          { "id": "bn-45", "title": "আশা" },
+          { "id": "bn-46", "title": "পোস্টার" },
+          { "id": "bn-47", "title": "রানার" },
+          { "id": "bn-48", "title": "তোমাকে পাওয়ার জন্য, হে স্বাধীনতা" },
+          { "id": "bn-49", "title": "অবাক সূর্যোদয়" },
+          { "id": "bn-50", "title": "বোশেক" },
+          { "id": "bn-51", "title": "চুনিয়া আমার আরকেডিয়া" },
+          { "id": "bn-52", "title": "মিছিল" }
+        ]
+      },
+      {
+        "name": "বাংলা ভাষার ব্যাকরণ ও নির্মিতি",
+        "chapters": [
+          { "id": "eng-1", "title": "Grammar" },
+          { "id": "eng-2", "title": "Literature" },
+          { "id": "eng-3", "title": "Writing Skills" }
+        ]
+      },
+      {
+        "name": "English For Today",
+        "chapters": [
+          { "id": "eng-1", "title": "Grammar" },
+          { "id": "eng-2", "title": "Literature" },
+          { "id": "eng-3", "title": "Writing Skills" }
+        ]
+      },
+      {
+        "name": "গণিত",
+        "chapters": [
+          { "id": "eng-1", "title": "Grammar" },
+          { "id": "eng-2", "title": "Literature" },
+          { "id": "eng-3", "title": "Writing Skills" }
+        ]
+      },
+      {
+        "name": "তথ্য ও যোগাযোগ প্রযুক্তি",
+        "chapters": [
+          { "id": "eng-1", "title": "Grammar" },
+          { "id": "eng-2", "title": "Literature" },
+          { "id": "eng-3", "title": "Writing Skills" }
+        ]
+      },
+      {
+        "name": "হিন্দুধর্ম শিক্ষা",
+        "chapters": [
+          { "id": "eng-1", "title": "Grammar" },
+          { "id": "eng-2", "title": "Literature" },
+          { "id": "eng-3", "title": "Writing Skills" }
+        ]
+      }
+    ]
+  },
   "Science": {
     "stream": "Science",
     "subjects": [
@@ -24,7 +126,7 @@
     "stream": "Commerce",
     "subjects": [
       {
-        "name": "Accounting",
+        "name": "হিসাববিজ্ঞান",
         "chapters": [
           { "id": "acc-1", "title": "Introduction to Accounting" },
           { "id": "acc-2", "title": "Financial Statements" },
@@ -32,11 +134,17 @@
         ]
       },
       {
-        "name": "Business Studies",
+        "name": "ব্যবসায় উদ্যোগ",
         "chapters": [
           { "id": "bs-1", "title": "Principles of Management" },
           { "id": "bs-2", "title": "Marketing Basics" },
           { "id": "bs-3", "title": "Business Environment" }
+        ]
+      },
+      {
+        "name": "ফিন্যান্স ও ব্যাংকিং",
+        "chapters": [
+          { "id": "fs-1", "title": "Principles of Management" }
         ]
       }
     ]
