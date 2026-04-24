@@ -1,0 +1,29 @@
+---
+import Moheshwar from '../assets/moheshwar.jpg';
+import Somudre from '../assets/somudre.jpg';
+import {Image} from "astro:assets"
+---
+
+<p class="text-3xl m-5">Brought to you by:</p>
+<div class="card lg:card-side bg-base-100 mx-5">
+  <figure>
+    <Image src={Moheshwar} alt="Moheshwar" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Moheshwar Amarnath Biswas</h2>
+    <p>Design and Development</p>
+  </div>
+</div>
+<div class="card lg:card-side bg-base-100 mx-5 mt-5">
+  <figure>
+   <Image src={Somudre} alt="Somudre" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Somudre Sarkar</h2>
+    <p>Initial Idea and Project Manager.</p>
+  </div>
+</div>
+
+<footer class="p-5 text-center">
+  <p>Copyright &copy 2026 <a href="https://moheshwar.com">Moheshwar Amarnath Biswas</a> and Somudre Sarkar</p>
+</footer>
