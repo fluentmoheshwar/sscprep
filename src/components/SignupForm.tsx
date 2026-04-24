@@ -92,13 +92,7 @@ export default function SignupForm() {
                     />
                     <div className="flex-1">
                       <span className="label-text font-medium">{s}</span>
-                      <span className="label-text-alt text-xs">
-                        {s === "Science" && "(Physics, Chemistry, Biology)"}
-                        {s === "Commerce" &&
-                          "(Accounting, Business Studies, Economics)"}
-                        {s === "Arts" &&
-                          "(History, Geography, Political Science)"}
-                      </span>
+
                     </div>
                   </label>
                 ))}
