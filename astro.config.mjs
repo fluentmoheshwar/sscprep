@@ -1,6 +1,6 @@
 // @ts-check
+import { defineConfig, fontProviders  } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "astro/config";
 
 import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
 
@@ -11,6 +11,12 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Noto Sans Bengali",
+      cssVariable: "--font-noto-sans-bengali",
+    },
+  ],
   integrations: [showTailwindcssBreakpoint(), react()],
 });

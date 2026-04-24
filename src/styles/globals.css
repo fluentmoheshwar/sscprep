@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+*, *::before, *::after {
+  font-family: "Noto Sans Bengali", sans-serif;
+}

@@ -22,7 +22,6 @@ import Layout from "../layouts/Layout.astro";
             <div class="card-body">
               <h2 class="card-title mb-6">Your {stream} Syllabus</h2>
               <SyllabusAccordion
-                client:load
                 subjects={[
                   ...(syllabusData["All"]?.subjects || []),
                   ...(syllabusData[stream as keyof typeof syllabusData]

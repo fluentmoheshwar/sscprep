@@ -1,5 +1,3 @@
-"use client";
-
 import { isLoggedIn, signup } from "../utils/userManager";
 import React, { useEffect, useState } from "react";
 
