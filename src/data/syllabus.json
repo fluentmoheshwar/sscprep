@@ -109,9 +109,22 @@
       {
         "name": "English For Today",
         "chapters": [
-          { "id": "eng-1", "title": "Grammar" },
-          { "id": "eng-2", "title": "Literature" },
-          { "id": "eng-3", "title": "Writing Skills" }
+          { "id": "eng-1", "title": "Sense of Self" },
+          { "id": "eng-2", "title": "Climate Change" },
+          { "id": "eng-3", "title": "Pastimes" },
+          { "id": "eng-4", "title": "Events and Festivals" },
+          { "id": "eng-5", "title": "Problems Around Us" },
+          { "id": "eng-6", "title": "Our Neighbours" },
+          { "id": "eng-7", "title": "People Who Stand Out" },
+          { "id": "eng-8", "title": "World Heritage" },
+          { "id": "eng-9", "title": "Unconventional Jobs" },
+          { "id": "eng-10", "title": "Dreams" },
+          { "id": "eng-11", "title": "Reading from English Literature" },
+          { "id": "eng-12", "title": "Roots" },
+          { "id": "eng-13", "title": "Loneliness" },
+          { "id": "eng-14", "title": "Renewable Energy" },
+          { "id": "eng-15", "title": "Media and Modes of E-communication" },
+          { "id": "eng-16", "title": "Graffiti" }
         ]
       },
       {
@@ -125,8 +138,14 @@
       {
         "name": "তথ্য ও যোগাযোগ প্রযুক্তি",
         "chapters": [
-          { "id": "ict-1", "title": "তথ্য ও যোগাযোগ প্রযুক্তি ও আমাদের বাংলাদেশ" },
-          { "id": "ict-2", "title": "কম্পিউটার রক্ষণাবেক্ষণ ও সাইবার নিরাপত্তা" },
+          {
+            "id": "ict-1",
+            "title": "তথ্য ও যোগাযোগ প্রযুক্তি ও আমাদের বাংলাদেশ"
+          },
+          {
+            "id": "ict-2",
+            "title": "কম্পিউটার রক্ষণাবেক্ষণ ও সাইবার নিরাপত্তা"
+          },
           { "id": "ict-3", "title": "ইন্টারনেট ও ওয়েব পরিচিতি" },
           { "id": "ict-4", "title": "আমার লেখালিখি ও হিসাব" },
           { "id": "ict-5", "title": "মাল্টিমিডিয়া ও গ্রাফিক্স" },
@@ -193,9 +212,7 @@
       },
       {
         "name": "ফিন্যান্স ও ব্যাংকিং",
-        "chapters": [
-          { "id": "fs-1", "title": "Principles of Management" }
-        ]
+        "chapters": [{ "id": "fs-1", "title": "Principles of Management" }]
       }
     ]
   },
